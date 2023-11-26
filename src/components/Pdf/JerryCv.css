@@ -1,0 +1,87 @@
+/* .encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 350px;
+    background-color: #a6bbd8;
+}
+h2, h1, h3{
+    color: #213D62;
+}
+h2{
+    margin: 15px 0;
+}
+
+hr{
+    width: 5em;
+    height: 6px;
+    border-radius: 90px;
+    margin-bottom: 1.2em;
+    border: none;
+    background-color: #213D62;
+}
+.encabezado h1{
+    font-size: 3em;
+}
+
+.encabezado img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100vmax;
+}
+
+.abajo{
+    display: flex;
+    padding: 2em 5em;
+    background-color: #fff;
+    color: #000;
+    gap: 40px;
+}
+
+.contacto{
+    width: 600px;
+}
+
+.iconos{
+    margin-left: 0 !important;
+    list-style: none;
+}
+
+/* .iconos img{
+    padding-right: 1em;
+} 
+
+.iconos li{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.iconos span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 3em;
+    height: 3em;
+    border-radius: 100vmax;
+    background-color: #213D62;
+}
+
+.contacto ul{
+    margin-left: 2em;
+}
+
+.acerca{
+    /* background-color: #213D62; 
+    padding-left: 20px;
+}
+
+.acerca ul li{
+    font-size: 1em;
+    font-weight: 500;
+    color: #213D62;
+} */

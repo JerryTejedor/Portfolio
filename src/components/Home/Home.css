@@ -1,0 +1,140 @@
+/* Estilos para el contenedor principal del componente Home */
+main {
+    background: url('../assets/img/banner-bg.png'); /* Fondo de la sección principal */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    background-position: center; /* Centrar la imagen de fondo */
+    background-size: cover; /* Ajustar el tamaño de la imagen de fondo para cubrir el contenedor */
+    height: 100vh; /* Altura del 100% del viewport */
+    width: 100%; /* Ancho del 100% del viewport */
+    display: flex; /* Mostrar como flexbox */
+    justify-content: center; /* Centrar horizontalmente los elementos hijos */
+    align-items: center; /* Centrar verticalmente los elementos hijos */
+    padding: 0 5em; /* Relleno en los lados izquierdo y derecho del contenedor */
+}
+
+/* Estilos para la sección derecha del componente */
+.main__right {
+    display: flex; /* Mostrar como flexbox */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    margin-top: 5em; /* Margen superior */
+}
+
+.main__right h1 {
+    font-size: 3em;
+}
+
+/* Estilos para el título secundario en la sección derecha */
+.main__right h2 {
+    display: flex; /* Mostrar como flexbox */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    font-weight: 500; /* Peso de la fuente */
+    font-size: 1em; /* Tamaño de la fuente */
+    width: 12em; /* Ancho del título */
+    height: 2em; /* Altura del título */
+    margin-bottom: .3em; /* Margen inferior */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borde del título */
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%); /* Fondo gradiente del título */
+}
+
+
+
+/* Estilos para el subtítulo en la sección derecha */
+.main__right h3 {
+    font-weight: 400; /* Peso de la fuente */
+    font-size: 1.1em; /* Tamaño de la fuente */
+    width: 80%; /* Ancho del subtítulo */
+    margin-bottom: 2em; /* Margen inferior */
+    color: rgba(255, 255, 255, 0.5); /* Color del texto */
+}
+
+/* Estilos para el botón de ver el CV en la sección derecha */
+.btn-cv {
+    display: flex; /* Mostrar como flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-decoration: none; /* Sin subrayado de texto */
+    gap: 1em; /* Espacio entre elementos hijos */
+    color: #fff; /* Color del texto */
+    font-size: 1em; /* Tamaño de la fuente */
+    font-weight: 600; /* Peso de la fuente */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borde del botón */
+    width: 9em; /* Ancho del botón */
+    height: 2em; /* Altura del botón */
+    padding: 0 1em; /* Relleno en los lados izquierdo y derecho del botón */
+    cursor: pointer; /* Cursor al pasar sobre el botón */
+    border-radius: 2em; /* Radio de borde para esquinas redondeadas */
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilos para la imagen dentro del botón de ver el CV */
+.btn-cv img {
+    display: none; /* Ocultar la imagen por defecto */
+    width: 1em; /* Tamaño de la imagen */
+}
+
+/* Estilos al pasar el ratón sobre el botón de ver el CV */
+.btn-cv:hover {
+    transition: 1s; /* Duración de la transición */
+    width: 12em; /* Ancho expandido al pasar el ratón */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+/* Estilos al pasar el ratón sobre la imagen dentro del botón de ver el CV */
+.btn-cv:hover img {
+    width: 2em; /* Tamaño de la imagen al pasar el ratón */
+    transition: .5s; /* Duración de la transición */
+    display: block; /* Mostrar la imagen al pasar el ratón */
+}
+
+/* Estilos para la sección izquierda del componente */
+.main__left {
+    margin-top: 4em; /* Margen superior */
+}
+
+/* Estilos para la imagen en la sección izquierda del componente */
+.main__left img {
+    width: 28em; /* Tamaño de la imagen */
+    animation: 6s infinite alternate up; /* Animación de subida y bajada */
+}
+
+/* Animación de subida y bajada */
+@keyframes up {
+    from {
+      margin-top: 20%; /* Posición inicial de la animación */
+    }
+    to {
+      margin-bottom: 20%; /* Posición final de la animación */
+    }
+}
+
+
+@media (max-width: 730px) {
+    main{
+        flex-direction: column;
+        height: 100%;
+        padding: 2em 1em;
+    }
+    .main__right{
+        margin-top: 10em;
+        z-index: 999;
+    }
+
+    .main__right h1{
+        font-size: 2em;
+    }
+
+    .main__right h3{
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .main__left{
+        position: absolute;
+        z-index: 989;
+    }
+    .main__left img{
+        width: 15em;
+
+    }
+}
